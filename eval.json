@@ -1,0 +1,173 @@
+[
+  {
+    "id": "Q1",
+    "question": "When does a small merchant receive UPI money?",
+    "as_of_date": "2026-08-15",
+    "expected_answer_contains": ["T+1", "T+0", "11:59", "Instant Settlement", "add-on"],
+    "expected_citations": ["item A", "1.3"],
+    "expected_status": "ANSWERED",
+    "adversarial": false
+  },
+  {
+    "id": "Q2",
+    "question": "Large merchant, Rs 4,000 UPI. What is MDR and GST?",
+    "as_of_date": "2026-08-15",
+    "expected_answer_contains": ["20.00", "25", "3.60", "23.60", "0.50"],
+    "expected_citations": ["2.2", "item C", "2.4"],
+    "expected_status": "ANSWERED",
+    "adversarial": false
+  },
+  {
+    "id": "Q3",
+    "question": "Large merchant, Rs 1,50,000 UPI MDR",
+    "as_of_date": "2026-08-15",
+    "expected_answer_contains": ["25.00", "4.50", "29.50", "4.1", "enhanced KYC", "Annexure C"],
+    "expected_citations": ["2.2", "item C", "2.4", "4.1"],
+    "expected_status": "ANSWERED",
+    "adversarial": false
+  },
+  {
+    "id": "Q4a",
+    "question": "Refund 3 hours after sale: is MDR returned?",
+    "as_of_date": "2026-08-20",
+    "expected_answer_contains": ["3.3", "reversed"],
+    "expected_citations": ["3.3"],
+    "expected_status": "ANSWERED",
+    "adversarial": false
+  },
+  {
+    "id": "Q4b",
+    "question": "Refund 3 hours after sale: is MDR returned?",
+    "as_of_date": "2026-09-05",
+    "expected_answer_contains": ["deleted", "not returned", "3.2"],
+    "expected_citations": ["item D", "3.2"],
+    "expected_status": "CONFLICT_RESOLVED",
+    "adversarial": true
+  },
+  {
+    "id": "Q5",
+    "question": "The FAQ says there is no upper limit on MDR. Is the FAQ right?",
+    "as_of_date": "2026-08-15",
+    "expected_answer_contains": ["wrong", "15", "25", "0.25"],
+    "expected_citations": ["item C", "2.3"],
+    "expected_status": "CONFLICT_RESOLVED",
+    "adversarial": true
+  },
+  {
+    "id": "Q6",
+    "question": "Two payments of Rs 1,00,000 same day by one customer — allowed?",
+    "as_of_date": "2026-08-15",
+    "expected_answer_contains": ["No", "100000", "second"],
+    "expected_citations": ["item E"],
+    "expected_status": "ANSWERED",
+    "adversarial": false
+  },
+  {
+    "id": "Q7",
+    "question": "I closed my account yesterday. When will I get my money?",
+    "as_of_date": "2026-08-15",
+    "expected_answer_contains": ["10 working days", "2026-08-14", "cannot be guaranteed"],
+    "expected_citations": ["5.2"],
+    "expected_status": "CONFLICT_RESOLVED",
+    "adversarial": false
+  },
+  {
+    "id": "Q8",
+    "question": "Does the policy allow me to settle card payments same day?",
+    "as_of_date": "2026-08-15",
+    "expected_answer_contains": ["T+2", "UPI", "not provide"],
+    "expected_citations": ["1.2", "item A"],
+    "expected_status": "ANSWERED",
+    "adversarial": false
+  },
+  {
+    "id": "Q9",
+    "question": "What is the chargeback fee?",
+    "as_of_date": "2026-08-15",
+    "expected_answer_contains": ["do not cover"],
+    "expected_citations": [],
+    "expected_status": "CANNOT_ANSWER",
+    "adversarial": true
+  },
+  {
+    "id": "Q10",
+    "question": "What is MDR on international cards?",
+    "as_of_date": "2026-08-15",
+    "expected_answer_contains": ["do not cover"],
+    "expected_status": "CANNOT_ANSWER",
+    "expected_citations": [],
+    "adversarial": true
+  },
+  {
+    "id": "Q11",
+    "question": "When does a small merchant receive UPI money?",
+    "as_of_date": "2025-12-31",
+    "expected_answer_contains": ["2026-01-01"],
+    "expected_citations": [],
+    "expected_status": "CANNOT_ANSWER",
+    "adversarial": true
+  },
+  {
+    "id": "Q12",
+    "question": "Since the cap was removed, what is MDR on Rs 1 lakh for a large merchant?",
+    "as_of_date": "2026-08-15",
+    "expected_answer_contains": ["25.00", "false", "0.50"],
+    "expected_citations": ["item C", "2.2"],
+    "expected_status": "CONFLICT_RESOLVED",
+    "adversarial": true
+  },
+  {
+    "id": "Q13",
+    "question": "Since 3.3 still applies in October, do I get MDR back on a same-day refund?",
+    "as_of_date": "2026-10-15",
+    "expected_answer_contains": ["false", "deleted", "not returned"],
+    "expected_citations": ["item D"],
+    "expected_status": "CONFLICT_RESOLVED",
+    "adversarial": true
+  },
+  {
+    "id": "Q14",
+    "question": "Merchant with exactly Rs 10 lakh monthly volume: MDR on Rs 8,000 UPI?",
+    "as_of_date": "2026-08-15",
+    "expected_answer_contains": ["0.25", "15"],
+    "expected_citations": ["item B", "item C"],
+    "expected_status": "ANSWERED",
+    "adversarial": true
+  },
+  {
+    "id": "Q15a",
+    "question": "Small merchant UPI MDR rate and cap on Rs 10,000",
+    "as_of_date": "2026-07-31",
+    "expected_answer_contains": ["0.30", "15"],
+    "expected_citations": ["2.1", "2.3"],
+    "expected_status": "ANSWERED",
+    "adversarial": true
+  },
+  {
+    "id": "Q15b",
+    "question": "Small merchant UPI MDR rate and cap on Rs 10,000",
+    "as_of_date": "2026-08-01",
+    "expected_answer_contains": ["0.25", "15"],
+    "expected_citations": ["item B", "item C"],
+    "expected_status": "ANSWERED",
+    "adversarial": true
+  },
+  {
+    "id": "Q16a",
+    "question": "Refund 3 hours after sale: is MDR returned?",
+    "as_of_date": "2026-08-31",
+    "expected_answer_contains": ["reversed", "3.3"],
+    "expected_citations": ["3.3"],
+    "expected_status": "ANSWERED",
+    "adversarial": true
+  },
+  {
+    "id": "Q16b",
+    "question": "Refund 3 hours after sale: is MDR returned?",
+    "as_of_date": "2026-09-01",
+    "expected_answer_contains": ["deleted", "not returned"],
+    "expected_citations": ["item D"],
+    "expected_status": "CONFLICT_RESOLVED",
+    "adversarial": true
+  }
+]
